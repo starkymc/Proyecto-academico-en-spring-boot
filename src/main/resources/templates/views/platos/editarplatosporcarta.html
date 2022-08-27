@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="plantilla/template :: head">
+</head>
+
+<body style="font-family: none;background-image: url(https://i.pinimg.com/originals/df/fe/e4/dffee4123447e1bd295ab8759c9846eb.jpg);">
+	<header th:replace="plantilla/template :: header"></header>
+<style>
+
+:root {
+  --gradient: linear-gradient(to left top, #DD2476 10%, #FF512F 90%) !important;
+}
+
+
+.card {
+  background: #222;
+  border: 0px solid #dd2476;
+  color: rgba(250, 250, 250, 0.8);
+  margin-bottom: 2rem;
+}
+
+.btn {
+  border: 5px solid;
+  border-image-slice: 1;
+  background: var(--gradient) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  border-image-source:  var(--gradient) !important; 
+  text-decoration: none;
+  transition: all .4s ease;
+}
+
+.btn:hover, .btn:focus {
+      background: var(--gradient) !important;
+  -webkit-background-clip: none !important;
+  -webkit-text-fill-color: #fff !important;
+  border: 5px solid #fff !important; 
+  box-shadow: #222 1px 0 10px;
+  text-decoration: underline;
+}
+
+
+
+
+</style>
+
+
+									
+		<div class="container">
+	</br>
+	<h1 style="text-align: center;color: white;text-shadow: 1px 1px saddlebrown, 2px 2px darkviolet;">CARTAS</h1>
+	</div>
+	<div class="container">			
+					
+				
+	
+<div class="container mx-auto mt-4">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+  <img src="https://www.mangiaperuano.com/wp-content/uploads/2020/04/grafica-scheramta-dei-video-papa-rellena-tavola-disegno-1-1920x1080-1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Papa rellena</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Food</h6>
+    <p class="card-text">Consiste en una masa frita de papa cocida, rellena de carne de vacuno, pollo, queso, cebollas, aceitunas, huevos duros, entre otros..</p>
+     
+<a class="btn btn-primary btn-sm" th:href="@{/editarplatos/1}"
+				th:text="'Editar Plato'" title="Editar Plato"></a>
+  </div>
+  </div>
+    </div>    
+       <div class="col-md-4">
+<div class="card" style="width: 18rem;">
+  <img src="https://media.istockphoto.com/photos/ceviche-dish-symbol-of-peruvian-gastronomy-picture-id1053234812?k=20&m=1053234812&s=612x612&w=0&h=MFR_az1REhfVQlGgOLJ4khp_dYV_ei2Z1qaaA4mbud8=" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Ceviche</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Seafood</h6>
+    <p class="card-text">Es un plato consistente en carne marinada ―pescado, mariscos o ambos― en aliños cítricos.</p>
+    <a class="btn btn-primary btn-sm" th:href="@{/editarplatos/2}"
+				th:text="'Editar Plato'" title="Editar Plato"></a>
+  </div>
+  </div>
+    </div>    
+          <div class="col-md-4">
+<div class="card" style="width: 18rem;">
+  <img src="https://media.conmuchagula.es/2021/03/aji-de-gallina.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Aji de gallina</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Food</h6>
+    <p class="card-text">Es un plato típico de la gastronomía peruana, concretamente de la costa, ​ que consiste en un ají o crema espesa con pechuga de gallina deshilachada.</p>
+     <a class="btn btn-primary btn-sm" th:href="@{/editarplatos/3}"
+				th:text="'Editar Plato'" title="Editar Plato"></a>
+  </div>
+  </div>
+  </div>
+    
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+  <img src="https://cloudfront-us-east-1.images.arcpublishing.com/gruporepublica/XILY4GPXQJERRANM4TTVYILZXI.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Arroz con pollo</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Food</h6>
+    <p class="card-text">Consiste en arroz cocinado con pollo, en presas o desmechado, verduras, y sazonado con especias.</p>
+       <a class="btn btn-primary btn-sm" th:href="@{/editarplatos/9}"
+				th:text="'Editar Plato'" title="Editar Plato"></a>
+  </div>
+  </div>
+    </div>    
+       <div class="col-md-4">
+<div class="card" style="width: 18rem;">
+  <img src="https://comidasdelperu.com/wp-content/uploads/2021/06/Receta-de-Causa-Rellena-Paso-a-paso-1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Causa rellena</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Food</h6>
+    <p class="card-text">La causa limeña es uno de los platos emblemáticos de la gastronomía de Perú, su ingrediente más característico es la papa amarilla.</p>
+    <a class="btn btn-primary btn-sm" th:href="@{/editarplatos/10}"
+				th:text="'Editar Plato'" title="Editar Plato"></a>
+  </div>
+  </div>
+    </div>    
+          <div class="col-md-4">
+<div class="card" style="width: 18rem;">
+  <img src="https://e.rpp-noticias.io/normal/2020/08/18/320232_984915.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Pachamanca</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Food</h6>
+    <p class="card-text">El origen de la Pachamanca se basa en una técnica ancestral de cocción en horno de piedras bajo tierra..</p>
+    <a class="btn btn-primary btn-sm" th:href="@{/editarplatos/16}"
+				th:text="'Editar Plato'" title="Editar Plato"></a>
+  </div>
+  </div>
+  </div>
+    
+   
+   
+      
+     
+</div>
+  </div>
+					
+				</form>
+
+			</div>
+		</div>
+	</div>
+	
+	<footer th:replace="plantilla/template :: footer"></footer>
+</body>
+
+</html>

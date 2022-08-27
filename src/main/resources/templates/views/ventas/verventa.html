@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="plantilla/template :: head">
+</head>
+
+
+<body style="font-family: none;background-image: url(https://i.pinimg.com/originals/df/fe/e4/dffee4123447e1bd295ab8759c9846eb.jpg);">
+	
+	<header th:replace="plantilla/template :: header"></header>
+	
+	<div class="container">
+	</br>
+	</div>
+	<div class="container">
+
+	<div class="container" style="width: 500px;">
+
+		<div style="color:black; background: #2a1e1e!important;">
+			<div class="card-header bg-black text-white"   th:text="${titulo}">
+
+			</div>
+			<div class="card-body" style="
+    background: #272423;">
+
+				<form th:action="@{/save}" th:object="${ventas}" method="POST">
+					<div class="form-group row">
+						<input type="hidden" th:field="*{idventa}" class="form-control form-control-sm col-6" id="idcliente"
+							placeholder="Id de Cliente">
+						<small></small>
+					</div>
+									
+					<div class="form-group row">
+						<label class="col-md-2" for="ventas" style="color: white;">Fecha</label>
+						<input type="date" readonly th:field="*{fecha}" class="form-control form-control-sm col-6" id="cliente"
+							placeholder="Nombre de Cliente">
+						<small></small>
+					</div>
+					
+					<div class="form-group row">
+						<label class="col-md-2"  for="ventas" style="color: white;">Cliente</label>
+						<input type="text" readonly th:field="*{nomcliente}" class="form-control form-control-sm col-6" id="fecha"
+							>
+						<small></small>
+					</div>
+					
+					
+					<div class="form-group row">
+						<label class="col-md-2"  for="platos" style="color: white;">Platos</label>
+						<input type="text" readonly th:field="*{platos.nomplato}" class="form-control form-control-sm col-6" id="fecha"
+							>
+						<small></small>
+					</div>
+					
+
+					<div class="form-group row">
+						<label class="col-md-2"  for="platos" style="color: white;">Precio</label>
+						<input type="text" readonly th:field="*{platos.precio}" class="form-control form-control-sm col-6" id="Precio"
+							>
+						<small></small>
+					</div>
+					
+					<div class="form-group row">
+						<label class="col-md-2"  for="ventas" style="color: white;">Pago</label>
+						<input type="text" readonly th:field="*{pago}" class="form-control form-control-sm col-6" id="Pago"
+							>
+						<small></small>
+					</div>
+				
+					<div class="form-group row">
+						<label class="col-md-2"  for="ventas" style="color: white;">Vuelto</label>
+						<input type="text" readonly th:field="*{vuelto}" class="form-control form-control-sm col-6" id="Vuelto"
+							>
+						<small></small>
+					</div>
+				
+
+					
+					
+				</form>
+
+			</div>
+		</div>
+	</div>
+	
+	<footer th:replace="plantilla/template :: footer"></footer>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="plantilla/template :: head">
+</head>
+
+
+<body style="font-family: none;background-image: url(https://i.pinimg.com/originals/df/fe/e4/dffee4123447e1bd295ab8759c9846eb.jpg);">
+	
+	<header th:replace="plantilla/template :: header"></header>
+	
+	<div class="container">
+	</br>
+	</div>
+	<div class="container"  style="width: 600px;">
+
+	<div class="container">
+
+		<div style="color:black; background: #2a1e1e!important;">
+			<div class="card-header bg-black text-white" th:text="${titulo}">
+
+			</div>
+			<div class="card-body" style="
+    background: #272423;">
+
+				<form th:action="@{/save}" th:object="${ventas}" method="POST">
+					<div class="form-group row">
+						<input type="hidden" th:field="*{idventa}" class="form-control form-control-sm col-6" id="idcliente"
+							placeholder="Id de venta">
+						<small></small>
+					</div>
+									
+					<div class="form-group row">
+						<label class="col-md-2" for="ventas" style="color: white;">Fecha</label>
+						<input type="date" required th:field="*{fecha}" class="form-control form-control-sm col-6" id="fecha"
+							placeholder="fecha">
+						<small></small>
+					</div>
+					
+					<div class="form-group row">
+						<label class="col-md-2" for="ventas" style="color: white;">Cliente</label>
+						<input type="text" required th:field="*{nomcliente}" class="form-control form-control-sm col-6" id="cliente"
+							placeholder="Nombre de Cliente">
+						<small></small>
+					</div>
+
+						
+							
+					<div class="form-group row">
+						<label class="col-md-2"  for="platos" style="color: white;">Plato</label>
+						<select readonly th:field="*{platos}"  class="form-control form-control-sm col-6" id="plato">
+							<option 
+								th:each="platos:${lstPlatos}" 
+								th:value="${platos.idplato}"
+								th:text="${platos.nomplato}" />
+						</select>
+					</div>
+
+						
+
+					
+					
+
+					<div class="card-footer bg-black">
+						<input type="submit" class="btn btn-primary btn-sm" value="Guardar"/>
+					</div>			
+					
+				</form>
+
+			</div>
+		</div>
+	</div>
+	
+	<footer th:replace="plantilla/template :: footer"></footer>
+</body>
+
+</html>

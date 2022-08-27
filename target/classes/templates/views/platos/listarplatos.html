@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="plantilla/template :: head">
+</head>
+
+<body style="font-family: none;background-image: url(https://i.pinimg.com/originals/df/fe/e4/dffee4123447e1bd295ab8759c9846eb.jpg);">
+	<header th:replace="plantilla/template :: header"></header>
+	<div class="container">
+		<h1 style="color: white; text-align: center;" th:text="${titulo}"></h1>
+	
+	</div>
+
+	<div class="container">
+	
+		<a class="btn btn-primary btn-sm" th:href="@{/crearplatos}"
+			th:text="'Nuevo Plato'" title="Crear Nuevo Plato"></a>
+			
+			<div class="container">
+				<h1 style="text-align: center;"></h1>
+		
+			</div>
+	
+		<table class="table table-dark table-hover">
+			<thead class="thead-white">
+				<th scope="col">Id</th>
+				<th scope="col">Plato</th>
+				<th scope="col">Precio</th>
+				
+				<th scope="col">Acciones</th>
+				<th scope="col"></th>
+				<th scope="col"></th>
+				<th scope="col"></th>
+			</thead>
+
+			<tbody>
+				<tr th:each="plat:${platos}">
+					<th scope="row" th:text="${plat.idplato}"></th>
+					<td th:text="${plat.nomplato}"></td>
+					<td th:text="${plat.precio}"></td>
+
+					
+						<td>
+						<a class="btn btn-primary btn-sm" th:href="@{/editarplatos/} + ${plat.idplato}"
+							th:text="'Editar Plato'" title="Editar Plato"></a>
+					</td>
+					
+					
+					<td>
+						<a class="btn btn-danger btn-sm" th:href="@{/eliminarplatos/} + ${plat.idplato}"
+							th:text="'Eliminar'" title="Eliminar Registro"
+							onclick="return confirm('Esta seguro de eliminar el Registro?');"></a>
+					</td>
+					
+					
+								
+				</tr>
+				
+			</tbody>
+			
+		</table>
+		
+	</div>
+	
+	<footer th:replace="plantilla/template :: footer"></footer>
+</body>
+
+</html>

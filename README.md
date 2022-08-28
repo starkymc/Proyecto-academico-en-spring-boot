@@ -13,7 +13,7 @@ src="https://i.postimg.cc/gcs9bFpW/2022-08-27-19h22-03.png" /></a></h1>
 <li><h3>Proveedor</h3></li>
 <ol>- Agregar, Editar , Eliminar (CRUD)  </ol> 
 
-<a href="https://www.svgrepo.com/show/303388/java-4-logo.svg" target="_blank" rel="noreferrer"> 
+<a href="https://i.postimg.cc/nzs2LPS0/2022-08-27-19h25-38.png" target="_blank" rel="noreferrer"> 
 <img aling="center" width="700" height="250"
 src="https://i.postimg.cc/nzs2LPS0/2022-08-27-19h25-38.png" />
  <img src="https://i.postimg.cc/rFzVwCqz/2022-08-27-19h29-49.png" alt="java" width="270" height="250"/>
@@ -61,5 +61,6 @@ src="https://i.postimg.cc/nzs2LPS0/2022-08-27-19h25-38.png" />
   <img src="https://www.vectorlogo.zone/logos/mysql/mysql-official.svg" alt="mysql" width="40" height="40"/>
   <img src="https://cdn.worldvectorlogo.com/logos/xampp.svg" alt="xamp" width="40" height="40"/>
   <img src="https://cleventy.com/wp-content/uploads/2020/05/spring-boot.png" alt="springboot" width="60" height="40"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" alt="html" width="40" height="40"/>
   </a>
   

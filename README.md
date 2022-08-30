@@ -62,5 +62,7 @@ src="https://i.postimg.cc/nzs2LPS0/2022-08-27-19h25-38.png" />
   <img src="https://cdn.worldvectorlogo.com/logos/xampp.svg" alt="xamp" width="40" height="40"/>
   <img src="https://cleventy.com/wp-content/uploads/2020/05/spring-boot.png" alt="springboot" width="60" height="40"/>
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" alt="html" width="40" height="40"/>
+   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1280px-Bootstrap_logo.svg.png" alt="bootstrap" width="40" height="35"/>
+   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/240px-CSS3_logo.svg.png" alt="css" width="40" height="40"/>
   </a>
   
